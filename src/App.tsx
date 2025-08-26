@@ -1,7 +1,17 @@
+import { Route, Routes } from 'react-router-dom'
+import DefaultLayout from './layouts/DefaultLayout'
+
 function App() {
   return (
     <>
-      <div>Initialization</div>
+      <Routes>
+        <Route element={<DefaultLayout />}>
+          <Route
+            path="/"
+            element={<h1>Home</h1>}
+          />
+        </Route>
+      </Routes>
     </>
   )
 }
