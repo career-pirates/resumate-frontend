@@ -1,19 +1,21 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import type { FolderNode } from '../../types/Folder'
 
 interface FolderNodeProps {
   node: FolderNode
 }
 
+// 사이드바 폴더 구조 확정 시 주석 삭제 예정
+
 function FolderTreeNode({ node }: FolderNodeProps) {
-  const [isOpen, setIsOpen] = useState(false)
-  const hasChildren = node.children.length > 0
+  // const [isOpen, setIsOpen] = useState(false)
+  // const hasChildren = node.children.length > 0
 
   return (
-    <div>
+    <div className="m-2">
       <div
         className="flex items-center justify-between gap-1 cursor-pointer"
-        onClick={() => hasChildren && setIsOpen(!isOpen)}
+        // onClick={() => hasChildren && setIsOpen(!isOpen)}
       >
         <div className="flex items-center gap-1">
           <span>
@@ -33,12 +35,12 @@ function FolderTreeNode({ node }: FolderNodeProps) {
             </svg>
           </span>
           <span className="text-md font-medium pt-[4px]">{node.name}</span>
-          {hasChildren && (
+          {/* {hasChildren && (
             <span className="text-xs w-4">{isOpen ? '▼' : '▶'}</span>
-          )}
+          )} */}
         </div>
 
-        <div>
+        <div className="ml-auto">
           <button>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +66,7 @@ function FolderTreeNode({ node }: FolderNodeProps) {
         </div>
       </div>
 
-      {isOpen && hasChildren && (
+      {/* {isOpen && hasChildren && (
         <div className="ml-2 mt-2 pl-2">
           {node.children.map((child) => (
             <FolderTreeNode
@@ -73,7 +75,7 @@ function FolderTreeNode({ node }: FolderNodeProps) {
             />
           ))}
         </div>
-      )}
+      )} */}
     </div>
   )
 }
