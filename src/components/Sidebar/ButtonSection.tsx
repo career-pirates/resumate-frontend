@@ -5,7 +5,7 @@ function ButtonSection() {
     <div className="flex w-full justify-between items-end px-[16px] py-[12px] gap-6">
       <RouteButton
         label="홈"
-        path=""
+        path="/"
         icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +23,7 @@ function ButtonSection() {
       />
       <RouteButton
         label="재료"
-        path=""
+        path="/"
         icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +43,7 @@ function ButtonSection() {
       />
       <RouteButton
         label="작성"
-        path=""
+        path="/"
         icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"
