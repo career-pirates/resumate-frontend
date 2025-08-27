@@ -1,7 +1,7 @@
 import { folders } from '../../mockData/folderData'
 import ButtonSection from './ButtonSection'
 import DeletedFolder from './DeletedFolder'
-import FolderTree from './FolderTree'
+import FolderSection from './FolderSection'
 import Logo from './Logo'
 import UserSection from './UserSection'
 
@@ -13,7 +13,7 @@ function Sidebar() {
         <ButtonSection />
       </div>
       <div className="mt-4">
-        <FolderTree folders={folders} />
+        <FolderSection folders={folders} />
       </div>
       <div className="mt-6">
         <DeletedFolder />
