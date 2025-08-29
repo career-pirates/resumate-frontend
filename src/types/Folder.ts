@@ -13,3 +13,8 @@ export type Folder = {
 export type FolderNode = Folder & {
   children: FolderNode[]
 }
+
+export type ThemeColor = {
+  bg: string
+  text: string
+}
