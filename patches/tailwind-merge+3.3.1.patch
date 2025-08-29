@@ -1,0 +1,89 @@
+diff --git a/node_modules/tailwind-merge/src/lib/class-group-utils.ts b/node_modules/tailwind-merge/src/lib/class-group-utils.ts
+index 360b02b..0d32086 100644
+--- a/node_modules/tailwind-merge/src/lib/class-group-utils.ts
++++ b/node_modules/tailwind-merge/src/lib/class-group-utils.ts
+@@ -1,4 +1,4 @@
+-import {
++import type {
+     AnyClassGroupIds,
+     AnyConfig,
+     AnyThemeGroupIds,
+diff --git a/node_modules/tailwind-merge/src/lib/config-utils.ts b/node_modules/tailwind-merge/src/lib/config-utils.ts
+index a5eb08e..95a9332 100644
+--- a/node_modules/tailwind-merge/src/lib/config-utils.ts
++++ b/node_modules/tailwind-merge/src/lib/config-utils.ts
+@@ -2,7 +2,7 @@ import { createClassGroupUtils } from './class-group-utils'
+ import { createLruCache } from './lru-cache'
+ import { createParseClassName } from './parse-class-name'
+ import { createSortModifiers } from './sort-modifiers'
+-import { AnyConfig } from './types'
++import type { AnyConfig } from './types'
+ 
+ export type ConfigUtils = ReturnType<typeof createConfigUtils>
+ 
+diff --git a/node_modules/tailwind-merge/src/lib/create-tailwind-merge.ts b/node_modules/tailwind-merge/src/lib/create-tailwind-merge.ts
+index 59b9538..600e953 100644
+--- a/node_modules/tailwind-merge/src/lib/create-tailwind-merge.ts
++++ b/node_modules/tailwind-merge/src/lib/create-tailwind-merge.ts
+@@ -1,7 +1,8 @@
+ import { createConfigUtils } from './config-utils'
+ import { mergeClassList } from './merge-classlist'
+-import { ClassNameValue, twJoin } from './tw-join'
+-import { AnyConfig } from './types'
++import { twJoin } from './tw-join'
++import type { ClassNameValue } from './tw-join'
++import type { AnyConfig } from './types'
+ 
+ type CreateConfigFirst = () => AnyConfig
+ type CreateConfigSubsequent = (config: AnyConfig) => AnyConfig
+diff --git a/node_modules/tailwind-merge/src/lib/default-config.ts b/node_modules/tailwind-merge/src/lib/default-config.ts
+index 248331d..d37e13a 100644
+--- a/node_modules/tailwind-merge/src/lib/default-config.ts
++++ b/node_modules/tailwind-merge/src/lib/default-config.ts
+@@ -1,5 +1,5 @@
+ import { fromTheme } from './from-theme'
+-import { Config, DefaultClassGroupIds, DefaultThemeGroupIds } from './types'
++import type { Config, DefaultClassGroupIds, DefaultThemeGroupIds } from './types'
+ import {
+     isAny,
+     isAnyNonArbitrary,
+diff --git a/node_modules/tailwind-merge/src/lib/from-theme.ts b/node_modules/tailwind-merge/src/lib/from-theme.ts
+index f7dfc36..85a99bc 100644
+--- a/node_modules/tailwind-merge/src/lib/from-theme.ts
++++ b/node_modules/tailwind-merge/src/lib/from-theme.ts
+@@ -1,4 +1,4 @@
+-import { DefaultThemeGroupIds, NoInfer, ThemeGetter, ThemeObject } from './types'
++import type { DefaultThemeGroupIds, NoInfer, ThemeGetter, ThemeObject } from './types'
+ 
+ export const fromTheme = <
+     AdditionalThemeGroupIds extends string = never,
+diff --git a/node_modules/tailwind-merge/src/lib/merge-classlist.ts b/node_modules/tailwind-merge/src/lib/merge-classlist.ts
+index 12c94ae..ed0b573 100644
+--- a/node_modules/tailwind-merge/src/lib/merge-classlist.ts
++++ b/node_modules/tailwind-merge/src/lib/merge-classlist.ts
+@@ -1,4 +1,4 @@
+-import { ConfigUtils } from './config-utils'
++import type { ConfigUtils } from './config-utils'
+ import { IMPORTANT_MODIFIER } from './parse-class-name'
+ 
+ const SPLIT_CLASSES_REGEX = /\s+/
+diff --git a/node_modules/tailwind-merge/src/lib/parse-class-name.ts b/node_modules/tailwind-merge/src/lib/parse-class-name.ts
+index b18a2fe..bbf0da4 100644
+--- a/node_modules/tailwind-merge/src/lib/parse-class-name.ts
++++ b/node_modules/tailwind-merge/src/lib/parse-class-name.ts
+@@ -1,4 +1,4 @@
+-import { AnyConfig, ParsedClassName } from './types'
++import type { AnyConfig, ParsedClassName } from './types'
+ 
+ export const IMPORTANT_MODIFIER = '!'
+ const MODIFIER_SEPARATOR = ':'
+diff --git a/node_modules/tailwind-merge/src/lib/sort-modifiers.ts b/node_modules/tailwind-merge/src/lib/sort-modifiers.ts
+index dd34b63..38efab5 100644
+--- a/node_modules/tailwind-merge/src/lib/sort-modifiers.ts
++++ b/node_modules/tailwind-merge/src/lib/sort-modifiers.ts
+@@ -1,4 +1,4 @@
+-import { AnyConfig } from './types'
++import type { AnyConfig } from './types'
+ 
+ /**
+  * Sorts modifiers according to following schema:
