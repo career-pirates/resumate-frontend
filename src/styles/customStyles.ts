@@ -3,7 +3,7 @@ import { cn } from '../utils/cn'
 
 //Title
 export const mainTitle = (...args: ClassValue[]) =>
-  cn('text-xl', 'font-bold', ...args)
+  cn('text-3xl', 'font-bold', ...args)
 
 //Input
 export const defaultInput = (...args: ClassValue[]) =>

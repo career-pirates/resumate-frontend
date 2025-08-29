@@ -12,7 +12,7 @@ function App() {
             element={<h1>Home</h1>}
           />
           <Route
-            path="/retrospectives"
+            path="/retrospectives/:id"
             element={<RetrospectiveList />}
           />
         </Route>
