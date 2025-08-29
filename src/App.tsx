@@ -9,7 +9,7 @@ function App() {
         <Route element={<DefaultLayout />}>
           <Route
             path="/"
-            element={<h1>Home</h1>}
+            element={<h1>홈페이지 뷰 퍼블리싱 예정</h1>}
           />
           <Route
             path="/retrospectives/:id"
