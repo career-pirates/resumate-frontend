@@ -1,21 +1,16 @@
-// import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import type { FolderNode } from '../../types/Folder'
 
 interface FolderNodeProps {
   node: FolderNode
 }
 
-// 사이드바 폴더 구조 확정 시 주석 삭제 예정
-
 function FolderTreeNode({ node }: FolderNodeProps) {
-  // const [isOpen, setIsOpen] = useState(false)
-  // const hasChildren = node.children.length > 0
-
   return (
     <div className="m-2">
-      <div
+      <Link
+        to={`/retrospectives/${node.id}`}
         className="flex items-center justify-between gap-1 cursor-pointer"
-        // onClick={() => hasChildren && setIsOpen(!isOpen)}
       >
         <div className="flex items-center gap-1">
           <span>
@@ -35,9 +30,6 @@ function FolderTreeNode({ node }: FolderNodeProps) {
             </svg>
           </span>
           <span className="text-md font-medium pt-[4px]">{node.name}</span>
-          {/* {hasChildren && (
-            <span className="text-xs w-4">{isOpen ? '▼' : '▶'}</span>
-          )} */}
         </div>
 
         <div className="ml-auto">
@@ -64,18 +56,7 @@ function FolderTreeNode({ node }: FolderNodeProps) {
             </svg>
           </button>
         </div>
-      </div>
-
-      {/* {isOpen && hasChildren && (
-        <div className="ml-2 mt-2 pl-2">
-          {node.children.map((child) => (
-            <FolderTreeNode
-              key={child.id}
-              node={child}
-            />
-          ))}
-        </div>
-      )} */}
+      </Link>
     </div>
   )
 }
