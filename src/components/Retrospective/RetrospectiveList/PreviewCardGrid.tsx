@@ -15,7 +15,7 @@ function PreviewCardGrid({ folderId }: PreviewCardGridProps) {
   }
 
   return (
-    <div className="grid grid-cols gap-4">
+    <div className="grid grid-cols-1 gap-4">
       {retrospectives.map((retrospective) => (
         <RetrospectivePreviewCard
           key={retrospective.id.toString()}
