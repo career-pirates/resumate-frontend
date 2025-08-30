@@ -13,10 +13,11 @@ const ButtonVariants = cva(`flex items-center justify-center cursor-pointer`, {
       ],
     },
     size: {
-      sm: 'px-[12px] py-[2px] text-[16px] font-medium rounded-md',
-      md: 'px-[16px] py-[2px] text-[18px] font-medium rounded-md',
-      lg: 'px-[20px] py-[2px] text-[20px] font-medium rounded-lg',
-      xl: 'px-[24px] py-[2px] text-[20px] font-medium rounded-lg',
+      xs: 'px-2 py-1 text-xs font-medium rounded-md',
+      sm: 'px-3 py-1 text-xs font-medium rounded-md',
+      md: 'px-3 py-1 text-sm font-medium rounded-md',
+      lg: 'px-4 py-2 text-sm font-medium rounded-lg',
+      xl: 'px-4 py-2 text-sm font-medium rounded-lg',
     },
   },
   defaultVariants: {
