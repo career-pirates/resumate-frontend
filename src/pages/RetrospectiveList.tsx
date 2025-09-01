@@ -5,20 +5,20 @@ import { folders } from '../mockData/folderData'
 import { themeColors } from '../utils/themeColors'
 
 function RetrospectiveList() {
-  const { id } = useParams<{ id: string }>()
-  const folderId = id ? BigInt(id) : null
+  const { folderId } = useParams<{ folderId: string }>()
+  const retroFolderId = folderId ? BigInt(folderId) : null
   if (!folderId) {
     return <div>잘못된 폴더 ID입니다.</div>
   }
 
   const rootFolder = folders.find(
-    (f) => f.id === folderId && f.parent_id === null,
+    (f) => f.id === retroFolderId && f.parent_id === null,
   )
   if (!rootFolder) {
     return <div>폴더가 존재하지 않습니다.</div>
   }
 
-  const subFolders = folders.filter((f) => f.parent_id === folderId)
+  const subFolders = folders.filter((f) => f.parent_id === retroFolderId)
   return (
     <div className="flex flex-col gap-6">
       <RetrospectiveHeader folderName={rootFolder.name} />

@@ -5,6 +5,9 @@ import { cn } from '../utils/cn'
 export const mainTitle = (...args: ClassValue[]) =>
   cn('text-2xl', 'font-bold', 'whitespace-nowrap', ...args)
 
+export const mainText = (...args: ClassValue[]) =>
+  cn('text-sm', 'text-[var(--gray--dark)]', 'font-normal', ...args)
+
 //Input
 export const defaultInput = (...args: ClassValue[]) =>
   cn(
@@ -29,8 +32,8 @@ export const Card = (...args: ClassValue[]) =>
 export const retroCard = (...args: ClassValue[]) =>
   cn(
     'bg-[var(--white--alter)]',
-    'px-[48px]',
-    'py-[32px]',
+    'px-6',
+    'py-4',
     'rounded-[12px]',
     'shadow-lg',
     ...args,
