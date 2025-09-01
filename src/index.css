@@ -16,6 +16,7 @@ body * {
   --gray: rgba(221, 221, 221, 1);
   --gray--light: rgba(243, 243, 243, 1);
   --gray--dark: rgba(62, 62, 62, 1);
+  --label--default: rgba(85, 85, 85, 1);
   --label--subtle: rgba(128, 128, 128, 1);
 
   --green: rgba(181, 238, 232, 1);
@@ -33,4 +34,5 @@ body * {
   --red: rgba(255, 204, 207, 1);
   --red--light: rgba(255, 238, 239, 1);
   --red--dark: rgba(246, 116, 121, 1);
+  --red--strong: rgba(255, 87, 95, 1);
 }
