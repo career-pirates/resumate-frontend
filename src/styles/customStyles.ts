@@ -3,7 +3,7 @@ import { cn } from '../utils/cn'
 
 //Title
 export const mainTitle = (...args: ClassValue[]) =>
-  cn('text-3xl', 'font-bold', ...args)
+  cn('text-2xl', 'font-bold', 'whitespace-nowrap', ...args)
 
 //Input
 export const defaultInput = (...args: ClassValue[]) =>
@@ -24,7 +24,7 @@ export const defaultInput = (...args: ClassValue[]) =>
 
 //Card
 export const Card = (...args: ClassValue[]) =>
-  cn('bg-white', 'rounded-[16px]', 'shadow-lg', ...args)
+  cn('bg-white', 'rounded-[16px]', 'shadow-sm', ...args)
 
 export const retroCard = (...args: ClassValue[]) =>
   cn(
