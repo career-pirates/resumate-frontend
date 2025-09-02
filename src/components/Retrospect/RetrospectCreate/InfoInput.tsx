@@ -33,7 +33,7 @@ function InfoInput() {
         />
       </div>
 
-      <div className="flex items-center gap-8 w-full">
+      <div className="flex flex-wrap items-center gap-8 w-full">
         <div className="flex items-center gap-2 flex-1">
           <span className="text-sm text-black font-medium w-9">파트</span>
 
