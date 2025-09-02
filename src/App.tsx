@@ -1,12 +1,21 @@
 import { Route, Routes } from 'react-router-dom'
 import DefaultLayout from './layouts/DefaultLayout'
-import RetrospectiveList from './pages/RetrospectiveList'
-import RetrospectiveDetail from './pages/RetrospectiveDetail'
+import RetrospectiveList from './pages/RetrospectList'
+import RetrospectiveDetail from './pages/RetrospectDetail'
+import EmptyLayout from './layouts/EmptyLayout'
+import RetrospectCreate from './pages/RetrospectCreate'
 
 function App() {
   return (
     <>
       <Routes>
+        <Route element={<EmptyLayout />}>
+          <Route
+            path="/retrospectives/new"
+            element={<RetrospectCreate />}
+          />
+        </Route>
+
         <Route element={<DefaultLayout />}>
           <Route
             path="/"
