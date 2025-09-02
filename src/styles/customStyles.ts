@@ -11,16 +11,20 @@ export const mainText = (...args: ClassValue[]) =>
 //Input
 export const defaultInput = (...args: ClassValue[]) =>
   cn(
-    'px-[24px]',
-    'py-[12px]',
+    'flex',
+    'justify-start',
+    'items-center',
+    'px-3',
+    'py-2',
+    'text-sm',
     'text-[var(--black)]',
     'bg-[var(--white)]',
-    'rounded-[12px]',
+    'rounded-md',
     'border',
     'border-[var(--gray)]',
     'focus:bg-[var(--white--alter)]',
     'placeholder:text-[var(--label--subtle)]',
-    'placeholder:text-[20px]',
+    'placeholder:text-sm',
     'placeholder:font-regular',
     ...args,
   )
