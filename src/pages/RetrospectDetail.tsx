@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom'
-import DetailCard from '../components/Retrospective/RetrospectiveDetail/DetailCard'
-import DetailHeader from '../components/Retrospective/RetrospectiveDetail/DetailHeader'
+import DetailCard from '../components/Retrospect/RetrospectDetail/DetailCard'
+import DetailHeader from '../components/Retrospect/RetrospectDetail/DetailHeader'
 import { retrospectivesData } from '../mockData/retrospectivesData'
 import type { Retrospectives } from '../types/Retrospectives'
 
