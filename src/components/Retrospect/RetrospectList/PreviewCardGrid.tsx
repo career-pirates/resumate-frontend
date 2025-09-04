@@ -1,5 +1,5 @@
 import { retrospectivesData } from '../../../mockData/retrospectivesData'
-import RetrospectivePreviewCard from './RetrospectivePreviewCard'
+import RetrospectivePreviewCard from './RetrospectPreviewCard'
 
 interface PreviewCardGridProps {
   folderId: bigint

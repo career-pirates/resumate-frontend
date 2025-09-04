@@ -1,8 +1,8 @@
 import { useParams } from 'react-router-dom'
-import RetrospectiveHeader from '../components/Retrospective/RetrospectiveHeader'
-import RetrospectiveWrapper from '../components/Retrospective/RetrospectiveList/RetrospectiveWrapper'
+import RetrospectiveHeader from '../components/Retrospect/RetrospectHeader'
+import RetrospectiveWrapper from '../components/Retrospect/RetrospectList/RetrospectWrapper'
 import { folders } from '../mockData/folderData'
-import { themeColors } from '../utils/themeColors'
+import { themeColors } from '../const/themeColors'
 
 function RetrospectiveList() {
   const { folderId } = useParams<{ folderId: string }>()
