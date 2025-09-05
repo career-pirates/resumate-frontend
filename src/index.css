@@ -19,6 +19,11 @@ body * {
   --label--default: rgba(85, 85, 85, 1);
   --label--subtle: rgba(128, 128, 128, 1);
 
+  --brand--blue: rgba(91, 154, 236, 1);
+  --brand--blue--subtle: rgba(180, 212, 255, 1);
+  --brand--green: rgba(0, 188, 172, 1);
+  --brand--green--subtle: rgba(175, 233, 227, 1);
+
   --green: rgba(181, 238, 232, 1);
   --green--light: rgba(235, 248, 250, 1);
   --green--dark: rgba(26, 159, 146, 1);
