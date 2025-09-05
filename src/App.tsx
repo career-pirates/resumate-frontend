@@ -4,12 +4,17 @@ import RetrospectiveList from './pages/RetrospectList'
 import RetrospectiveDetail from './pages/RetrospectDetail'
 import EmptyLayout from './layouts/EmptyLayout'
 import RetrospectCreate from './pages/RetrospectCreate'
+import Login from './pages/Login'
 
 function App() {
   return (
     <>
       <Routes>
         <Route element={<EmptyLayout />}>
+          <Route
+            path="/login"
+            element={<Login />}
+          />
           <Route
             path="/retrospectives/new"
             element={<RetrospectCreate />}
