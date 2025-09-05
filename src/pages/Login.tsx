@@ -10,8 +10,8 @@ function Login() {
         <BrandSection />
       </aside>
 
-      <main className="w-1/2 p-3 flex flex-col justify-center gap-4">
-        <div className="flex flex-col justify-center ">
+      <main className="w-1/2 p-3 flex flex-col justify-center gap-6">
+        <div className="flex flex-col justify-center text-[var(--gray--dark)]">
           <h1 className="flex justify-center text-xl font-bold">
             개인의 경험을 쉽게 기록하고
           </h1>
@@ -19,14 +19,16 @@ function Login() {
             자기소개서와 연결해주는 파트너
           </h1>
         </div>
-        <span className="flex justify-center text-xs font-normal text-[var(--label--subtle)]">
-          SNS 계정으로 로그인
-        </span>
 
-        <div className="flex justify-center gap-10">
-          <KakaoLoginButton />
-          <NaverLoginButton />
-          <GoogleLoginButton />
+        <div className="flex flex-col justify-center gap-4">
+          <span className="flex justify-center text-xs font-normal text-[var(--label--subtle)]">
+            SNS 계정으로 로그인
+          </span>
+          <div className="flex justify-center gap-10">
+            <KakaoLoginButton />
+            <NaverLoginButton />
+            <GoogleLoginButton />
+          </div>
         </div>
       </main>
     </div>
