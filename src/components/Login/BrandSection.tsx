@@ -8,14 +8,9 @@ function BrandSection() {
     >
       <div className="flex flex-col justify-center items-center z-10">
         <img
-          src="/public/Icon.png"
-          alt="Resumate Icon"
-          className="flex w-20 h-auto"
-        />
-        <img
-          src="/public/Logo.png"
+          src="/public/login_logo.png"
           alt="Resumate Logo"
-          className="flex w-40 h-auto"
+          className="flex w-35 h-auto"
         />
       </div>
     </div>
