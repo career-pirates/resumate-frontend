@@ -9,7 +9,7 @@ function KakaoLoginButton({ onClick }: KakaoLoginButtonProps) {
       onClick={onClick}
     >
       <img
-        src="public/kakaotalk_icon.png"
+        src="/kakaotalk_icon.png"
         alt="Kakao Login"
         className="w-full h-full object-cover"
       />

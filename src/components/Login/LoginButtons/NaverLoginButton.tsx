@@ -9,7 +9,7 @@ function NaverLoginButton({ onClick }: NaverLoginButtonProps) {
       onClick={onClick}
     >
       <img
-        src="public/naver_icon.png"
+        src="/naver_icon.png"
         alt="Naver Login"
         className="w-full h-full object-cover"
       />

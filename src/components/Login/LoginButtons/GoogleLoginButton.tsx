@@ -9,7 +9,7 @@ function GoogleLoginButton({ onClick }: GoogleLoginButtonProps) {
       onClick={onClick}
     >
       <img
-        src="public/google_icon.png"
+        src="/google_icon.png"
         alt="Google Login"
         className="w-full h-full object-cover"
       />
