@@ -85,7 +85,7 @@ function HomeAnalysis() {
           'min-w-60',
           'gap-6',
           'text-xs',
-          'h-full',
+          'h-[600px]',
         )}
       >
         <span className="text-xs text-[var(--brand--black--default)]">
